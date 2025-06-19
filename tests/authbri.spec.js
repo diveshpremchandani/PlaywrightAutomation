@@ -9,7 +9,7 @@ test('test', async ({ page }) => {
   // ✅ Clicking on "PAN Card Verification"
   await page.locator("//div[contains(text(),'PAN Card Verification')]").click();
 
-  // Optional: Verify navigation
+  /// Optional: Verify navigation
   await expect(page).toHaveURL('https://authbridge.com/checks/pan-card-verification/');
   await expect(page).toHaveTitle('PAN Card Verification API | PAN Card Verification - AuthBridge'); // Assumes the title contains 'PAN Card Verification'
     await expect(page.locator('h1')).toHaveText('PAN Card Verification API');
