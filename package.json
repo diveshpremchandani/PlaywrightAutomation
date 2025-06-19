@@ -1,0 +1,20 @@
+{
+  "name": "playwrightautomation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "regression": "npx playwright test --reporter=html",
+    "timeout": "npx playwright test --timeout 50000",
+    "browser": "npx playwright test --browser=chromium",
+    "browser-headless": "npx playwright test --browser=chromium --headless"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.52.0",
+    "@types/node": "^24.0.0"
+  }
+}
