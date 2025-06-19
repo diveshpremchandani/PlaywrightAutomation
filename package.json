@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "regression": "npx playwright test --reporter=html",
+    "regression": "npx playwright test  --reporter=html",
     "timeout": "npx playwright test --timeout 50000",
     "browser": "npx playwright test --browser=chromium",
     "browser-headless": "npx playwright test --browser=chromium --headless"
