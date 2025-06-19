@@ -44,7 +44,7 @@ export default defineConfig({
       name: 'chromium',
       use: { 
         ...devices['Desktop Chrome'],
-        headless:false, // Run tests in headless mode
+        headless:true, // Run tests in headless mode
         screenshot: 'only-on-failure', // Take screenshots only on failure
         video: 'retain-on-failure', // Record video on first retry
         trace:'on-first-retry', // Collect trace on first retry
