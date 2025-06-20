@@ -3,7 +3,7 @@ import { test, expect } from '@playwright/test';
 test('test', async ({ page }) => {
   await page.goto('https://authbridge.com/');
 
-  // ✅ Correct usage of .hover()
+  /// ✅ Correct usage of .hover()
   await page.locator("//a[normalize-space()='API Suite']").hover();
 
   // ✅ Clicking on "PAN Card Verification"
