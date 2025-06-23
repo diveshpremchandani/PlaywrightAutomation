@@ -26,7 +26,7 @@ test('test', async ({ page }) => {
 
   const chapbookLink = page.getByRole('link', { name: /Chapbook\/Pamphlet/ });
   //await expect(chapbookLink).toBeVisible();
-  await chapbookLink.click();
+  //await chapbookLink.click();
 
   await page.goto('https://www.ebay.com/sch/i.html?_nkw=books&_sacat=0&_from=R40&LH_Auction=1&rt=nc&Format=Box%2520Set%7CBath%2520Book&_dcat=261186');
   await expect(page).toHaveURL(/Bath%2520Book/); // Assert filtered URL

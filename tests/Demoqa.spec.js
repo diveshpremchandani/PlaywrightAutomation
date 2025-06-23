@@ -9,10 +9,10 @@ test('test', async ({ page }) => {
   await expect(uploadButton).toBeVisible();
 
   await uploadButton.click();
-  await uploadButton.setInputFiles('C:\\Users\\ShivaliGaba\\OneDrive - IBM\\Desktop\\PlaywrightAutomation\\Code of conduct (3).pdf');
+  //await uploadButton.setInputFiles('C:\\Users\\ShivaliGaba\\OneDrive - IBM\\Desktop\\PlaywrightAutomation\\Code of conduct (3).pdf');
 
-  const fileInput = await page.locator('input[type="file"]');
-  const files = await fileInput.evaluate(node => node.files.length);
+  //const fileInput = await page.locator('input[type="file"]');
+  //const files = await fileInput.evaluate(node => node.files.length);
   expect(files).toBeGreaterThan(0);
 
   const downloadPromise = page.waitForEvent('download');

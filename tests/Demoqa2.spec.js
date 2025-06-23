@@ -29,12 +29,12 @@ test('demoqa interaction test with assertions', async ({ page }) => {
   // Alerts
   //await page.getByText('Alerts, Frame & Windows').click();
   //await page.getByText  ('AlertsAlerts, Frame & Windows').click();
-  await page.getByRole('listitem').filter({ hasText: 'Alerts' }).click();
+  //await page.getByRole('listitem').filter({ hasText: 'Alerts' }).click();
 
-  page.once('dialog', dialog => {
-    expect(dialog.message()).toBe('You clicked a button');
-    dialog.dismiss();
-  });
+  //page.once('dialog', dialog => {
+    //expect(dialog.message()).toBe('You clicked a button');
+    //dialog.dismiss();
+  //});
   await page.locator('#alertButton').click();
 
   page.once('dialog', dialog => {

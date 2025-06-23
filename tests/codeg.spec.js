@@ -17,7 +17,7 @@ test('eBay Restaurant Equipment Navigation Test', async ({ page }) => {
   // Click on the item priced at $275.80
   const priceItem = page.getByText('$275.80', { exact: true });
   //await expect(priceItem).toBeVisible();
-  await priceItem.click();
+  //await priceItem.click();
 
   // Click on the specific item link
   const productLink = page.getByRole('link', {

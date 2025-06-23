@@ -11,8 +11,8 @@ test('test navigation and link clicks', async ({ page }) => {
   await expect(whiteCallerLink).toBeVisible();
   await whiteCallerLink.click();
 
-  // Optionally assert URL or page content if it navigates
-  //await expect(page).not.toHaveURL('https://authbridge.com/'); // Ensures navigation happened
+  /// Optionally assert URL or page content if it navigates
+  ///await expect(page).not.toHaveURL('https://authbridge.com/'); // Ensures navigation happened
 
   // Click on the logo to go back to the homepage
   const logoLink = page.getByRole('link', { name: 'AuthBridge-logo' });
